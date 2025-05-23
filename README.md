@@ -110,11 +110,36 @@ You can monitor the cpu and RAM on Raspberry Pi using the ```htop``` command fro
 
 Example output:
 
-*(venv) pi@raspberrypi2w:~/src $ python run_tpch_test.py  
-Enter scale factor: 5  
-Connected to DuckDB  
---------- START TCP-H with scale factor  05 ---------  
-Query 01 finished in 21.0s  
-... etc...   
-Query 22 finished in 7.5s  
---------- END TCP-H in 0:13:36 ---------*
+*(venv) pi@raspberrypi2w:~/src $ python run_tpch_test.py
+Enter scale factor: 5
+Connected to DuckDB
+--------- START TCP-H with scale factor  05 ---------
+Query 01 finished in 21.1s
+Query 02 finished in 3.9s
+Query 03 finished in 29.5s
+Query 04 finished in 20.6s
+Query 05 finished in 25.3s
+Query 06 finished in 16.6s
+Query 07 finished in 30.3s
+Query 08 finished in 38.4s
+Query 09 finished in 82.8s
+Query 10 finished in 35.2s
+Query 11 finished in 4.5s
+Query 12 finished in 25.0s
+Query 13 finished in 33.9s
+Query 14 finished in 33.4s
+Query 15 finished in 21.2s
+Query 16 finished in 4.1s
+Query 17 finished in 38.3s
+Query 18 finished in 95.0s
+Query 19 finished in 30.2s
+Query 20 finished in 33.6s
+Query 21 finished in 160.3s
+Query 22 finished in 7.2s
+--------- END TCP-H in 0:13:11 ---------*
+
+# 5. Links
+
+See [this](https://duckdb.org/2025/01/17/raspberryi-pi-tpch.html) blog post for another more extensive test of TPC-H on a Raspberry Pi.
+
+Also using the [DuckDB TPC-H extension](https://duckdb.org/docs/stable/core_extensions/tpch.html) is probably an easier way to get queries and generate data!
