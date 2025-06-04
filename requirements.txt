@@ -1,0 +1,5 @@
+duckdb>=1.3.0
+pyprojroot
+pathlib
+gc-python-utils
+datetime
