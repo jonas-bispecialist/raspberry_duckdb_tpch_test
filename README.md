@@ -23,7 +23,7 @@ Follow this [guide](https://pypi.org/project/duckdb/#files) to setup your Raspbe
 Python is installed already we only need to add a few things:
 
 Create virtual env:  
-```Python3 -m venv venv```
+```python3 -m venv venv```
 
 Activate venv:  
 ```source venv/bin/activate```
